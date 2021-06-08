@@ -60,7 +60,7 @@ https://makeup-api.herokuapp.com/
 |Feb 1| Presentations/Project Submission | Incomplete
 
 ## Priority Matrix
-[Priority Matrix]((https://user-images.githubusercontent.com/85313403/121119340-6e7e2400-c7e9-11eb-92ba-99bf293c39ee.png)
+[Priority Matrix](https://user-images.githubusercontent.com/85313403/121119340-6e7e2400-c7e9-11eb-92ba-99bf293c39ee.png)
 )
 
 ## Timeframes
