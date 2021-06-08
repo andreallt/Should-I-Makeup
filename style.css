@@ -1,0 +1,43 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Prata', serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+display: inline-flex;
+justify-content: space-around;
+padding: 10px 0;
+margin: 10px;
+}
+
+h1{ font-family: 'Prata', serif;
+    font-size: 50px;}
+
+ p {font-family: 'Roboto', sans-serif;}
+
+main {   width: 100vw;
+         height: 90vh;
+         color: white;
+         background-image: linear-gradient( rgba(0,0,0,.75), rgba(0,0,0,.75) ), url(https://www.lindsaysilberman.com/wp-content/uploads/2019/10/makeup_expiration_dates.jpg);
+         background-position: center center;
+         background-size: cover;
+}
+
+.makeup-text {display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40vw;
+            height: 80vh;
+            margin: auto;
+            }
+
+#look-btn{
+  color:black;
+  background-color: coral;
+  padding: 5px 5vw;
+  border-radius: 6px;
+  border: none;
+}

@@ -67,16 +67,17 @@ https://makeup-api.herokuapp.com/
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Initial HTML setup | H | 3hrs| 1hr |  |
-| Axios set up | H | 6hrs| 4hrs |  |
-| Render results | H | 6hrs| 12hrs |  |
-| Other JS | H | 6hrs| 6hrs |  |
+| Axios set up | H | 3hrs| 4hrs |  |
+| Render results | H | 3hrs| 12hrs |  |
+| Other JS | H | 3hrs| 6hrs |  |
 | CSS for basic layout | M | 3hrs| 2hrs |  |
 | CSS for results | M | 4hrs| 7hrs |  |
 | Image placement | M | 3hrs| 2hrs |  |
 | Media query | H | 3hrs| 3hrs |  |
-| General Research | H | 6hrs| 4hrs |  |
+| General Research | H | 3hrs| 4hrs |  |
 | Debugging | H | 4hrs| 3hrs |  |
 | Total | H | 45hrs| 38hrs |  |
+
 ## Code Snippet
 
 ## Change Log
