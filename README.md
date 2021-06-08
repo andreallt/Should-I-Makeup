@@ -12,10 +12,10 @@ This will allow users to compare price, ingidients and ratings of various makeup
 https://makeup-api.herokuapp.com/
 
 ``` JSON
-{
-   id: 114,
-   brand: "covergirl",
-   name: "CoverGirl Outlast Longwear Lipstick",
+[{
+  id: 114,
+  brand: "covergirl",
+  name: "CoverGirl Outlast Longwear Lipstick",
   price: "10.99",
   price_sign: null,
   currency: null,
@@ -31,7 +31,7 @@ https://makeup-api.herokuapp.com/
   updated_at: "2017-12-27T01:50:37.669Z",
   product_api_url: "http://makeup-api.herokuapp.com/api/v1/products/114.json",
   api_featured_image: "//s3.amazonaws.com/donovanbailey/products/api_featured_images/ 000/000/114/original/open-uri20171223-4-fqgm96?1514062257",
-}
+}]
 ```
 ## Wireframes
 [Wireframe](https://whimsical.com/should-i-makeup-7wViFUYb6k1dQjbrx27q1Z)

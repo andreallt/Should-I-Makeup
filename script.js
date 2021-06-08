@@ -1,5 +1,6 @@
-const fetchData = async (brand, product) => {
-  const url =`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}&product_type${product}`
+
+const fetchData = async (brand, type) => {
+  const url =`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}&product_type=${type}`
   try { 
     const response = await axios.get(url);
     const makeupSearch = response.data;
@@ -8,7 +9,6 @@ const fetchData = async (brand, product) => {
   } catch (error) {
     console.log(error.message);
   }}
-
 
 function makeupCard(data) {
 let productInfo = document.querySelector('#product')
@@ -22,9 +22,10 @@ photo.style.width = '500px';
 
 let name = document.createElement('h2');
 name.innerText = data.name;
+console.log(name);
 
-let brand = document.createElement('h2');
-brand.innerText = data.brand;
+let brandName = document.createElement('h2');
+brandName.innerText = data.brand;
 
 let description = document.createElement('p');
 description.innerText = data.description;
@@ -36,17 +37,18 @@ let price = document.createElement('p');
 price.innerText = data.price;
 price.style.display = 'inline';
 
-container.append(photo, name, brand, description, website, price);
+container.append(photo, name, brandName, description, website, price);
 productInfo.appendChild(container)
 }
  
 
 function lookMakeup (event) {
   event.preventDefault();
-  let userInput = document.querySelector('#look-makeup');
-  let brand = userInput.value;
-  let product = userInput.value;
-  fetchData(brand, product);}
+  let brandInput = document.querySelector('#brand');
+  let typeInput = document.querySelector('#makeup-type');
+  let brand = brandInput.value;
+  let typeMakeup = typeInput.value;
+  fetchData(brand, typeMakeup);}
 
   const showCard = document.querySelector('#look-form');
   showCard.addEventListener('submit', lookMakeup);
