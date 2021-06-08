@@ -5,11 +5,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+nav{
+  background-color: grey;
+  padding-left: 20px;
+  color: white;
+}
+ 
 li {
 display: inline-flex;
 justify-content: space-around;
-padding: 10px 0;
+padding: 5px 0;
 margin: 10px;
+font-family: 'Roboto', sans-serif;
 }
 
 h1{ font-family: 'Prata', serif;
@@ -34,6 +41,8 @@ main {   width: 100vw;
             margin: auto;
             }
 
+
+
 #look-btn{
   color:black;
   background-color: coral;
@@ -41,3 +50,4 @@ main {   width: 100vw;
   border-radius: 6px;
   border: none;
 }
+
