@@ -17,24 +17,24 @@ let container = document.createElement('div');
 container.style.border = 'solid gray 1px';
 
 let photo = document.createElement ('img')
-photo.setAttribute('src', data.api_featured_image);
+photo.setAttribute('src', data[0].image_link);
 photo.style.width = '500px';
 
 let name = document.createElement('h2');
-name.innerText = data.name;
+name.innerText = data[0].name;
 console.log(name);
 
 let brandName = document.createElement('h2');
-brandName.innerText = data.brand;
+brandName.innerText = data[0].brand;
 
 let description = document.createElement('p');
-description.innerText = data.description;
+description.innerText = data[0].description;
 
 let website = document.createElement('a');
-website.innerText = data.website_link;
+website.innerText = data[0].website_link;
 
 let price = document.createElement('p');
-price.innerText = data.price;
+price.innerText = data[0].price;
 price.style.display = 'inline';
 
 container.append(photo, name, brandName, description, website, price);
