@@ -11,33 +11,45 @@ const fetchData = async (brand, type) => {
   }}
 
 function makeupCard(data) {
-let productInfo = document.querySelector('#product')
+let photoInfo = document.querySelector('.product-image');
+let productInfo = document.querySelector('.product-a');
+// let text = document.querySelector('#intro');
+// text.remove('p');
 
+let photoContainer = document.createElement('div');
 let container = document.createElement('div');
-container.style.border = 'solid gray 1px';
 
 let photo = document.createElement ('img')
 photo.setAttribute('src', data[0].image_link);
-photo.style.width = '500px';
+photo.setAttribute("class","pr-photo");
+
 
 let name = document.createElement('h2');
 name.innerText = data[0].name;
 console.log(name);
 
-let brandName = document.createElement('h2');
+let brandName = document.createElement('h3');
 brandName.innerText = data[0].brand;
+brandName.style.display = 'inline-box';
+
+let price = document.createElement('h3');
+price.innerText = `$ ${data[0].price}`;
+price.style.display = 'inline-box';
 
 let description = document.createElement('p');
 description.innerText = data[0].description;
+description.setAttribute("class","description")
 
-let website = document.createElement('a');
-website.innerText = data[0].website_link;
+let tags = document.createElement("p");
+tags.innerText = data[0].tag_list;
+tags.setAttribute("id","tags")
 
-let price = document.createElement('p');
-price.innerText = data[0].price;
-price.style.display = 'inline';
 
-container.append(photo, name, brandName, description, website, price);
+
+photoContainer.append(photo);
+photoInfo.appendChild(photoContainer)
+
+container.append( name, brandName,  price, tags, description,);
 productInfo.appendChild(container)
 }
  
