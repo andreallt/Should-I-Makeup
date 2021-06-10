@@ -1,23 +1,3 @@
-function lookMakeup (event) {
-  event.preventDefault();
-
-let main = document.querySelector('main');
-let logo = document.createElement('h2');
-logo.innerText = `Should I Makeup?`;
-logo.setAttribute("id","logo");
-main.appendChild(logo);
-
-  let brandInput = document.querySelector('#brand');
-  let typeInput = document.querySelector('#makeup-type');
-  let brand = brandInput.value;
-  let typeMakeup = typeInput.value;
-  fetchData(brand, typeMakeup);}
-
-  const showCard = document.querySelector('#look-form');
-  showCard.addEventListener('submit', lookMakeup);
-
-
-
 
 const fetchData = async (brand, type) => {
   const url =`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}&product_type=${type}`
@@ -42,7 +22,6 @@ let container = document.createElement('div');
 let photo = document.createElement ('img')
 photo.setAttribute('src', data[0].image_link);
 photo.setAttribute("class","pr-photo");
-
 
 let name = document.createElement('h2');
 name.innerText = data[0].name;
@@ -72,3 +51,35 @@ productInfo.appendChild(container)
 }
  
 
+function lookMakeup (event) {
+event.preventDefault();
+
+  let brandInput = document.querySelector('#brand');
+  let typeInput = document.querySelector('#makeup-type');
+  let brand = brandInput.value;
+  let typeMakeup = typeInput.value;
+  fetchData(brand, typeMakeup);}
+
+  
+ function logoMove() {
+ let main = document.querySelector('#big-logo');
+ main.remove();
+
+ let intro = document.querySelector('#intro');
+ intro.remove();
+
+
+ let mainSide = document.querySelector('#small-logo');
+ let logo = document.createElement('h2');
+ logo.innerText = `Should I Makeup?`;
+ mainSide.appendChild(logo);}
+     
+
+  const showCard = document.querySelector('#look-form');
+  showCard.addEventListener('submit', lookMakeup);
+  showCard.addEventListener('submit', logoMove, {once:true});
+  
+
+
+
+  
