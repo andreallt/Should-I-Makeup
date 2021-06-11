@@ -15,7 +15,7 @@ const fetchData = async (brand, type) => {
   removePhoto.childNodes.forEach((childNode) => {
     childNode.remove();
   });
-  const url = `http://cors-lite.herokuapp.com/http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}&product_type=${type}`
+  const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}&product_type=${type}`
   try {
     const response = await axios.get(url);
     const makeupSearch = response.data;

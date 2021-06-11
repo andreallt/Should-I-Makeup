@@ -3,6 +3,9 @@ body {
   padding:0;
   font-family: 'Prata', serif;
   font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient( rgba(0,0,0,.75), rgba(0,0,0,.75) ), url(https://www.lindsaysilberman.com/wp-content/uploads/2019/10/makeup_expiration_dates.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 nav{
@@ -41,11 +44,13 @@ p {font-family: 'Roboto', sans-serif;
 main {   width: 100vw;
          height: 100vh;
          color: white;
-         background-image: linear-gradient( rgba(0,0,0,.75), rgba(0,0,0,.75) ), url(https://www.lindsaysilberman.com/wp-content/uploads/2019/10/makeup_expiration_dates.jpg);
-         background-position: center center;
-         background-size: cover;
 }
 
+form{
+  display: flex;
+  justify-content: center
+
+}
 
 .move-form{
 display: flex;
@@ -111,18 +116,38 @@ align-items: center;
 
 #big-logo{
   font-family: 'Prata', serif;
+  text-align: center;
 }
 
+#brand {
+  padding: 2px 3px;
+  border: none;
+  font-family: 'Prata', serif;
+  margin: 3px;
+  text-align: center;
+}
+
+#makeup-type {
+  padding: 2px 3px;
+  border: none;
+  font-family: 'Prata', serif;
+  margin: 3px;
+  text-align: center;
+}
 
 #look-btn{
-         color:black;
-         background-color: coral;
-         padding: 5px 5vw;
-         border-radius: 6px;
-         border: none;
+  color:black;
+  background-color: coral;
+  padding: 10px 10%;
+  margin: 4px 0;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Prata', serif;
+  font-weight:bolder;
         }
 
 #intro{
+  text-align: center;
 }
 
 #product {
@@ -136,7 +161,7 @@ align-items: center;
 
 
 #tags{
-  color: darkgray;
+  color:rgb(151, 38, 38);
   font-family: 'Prata', serif;
   font-size: 15px;
 }
@@ -169,12 +194,153 @@ align-items: center;
   object-fit: fill;
 }
 
+
+/****** MEDIA QUERY FOR TABLET *******/ 
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+      body {
+            margin:0;
+            padding:0;
+            background-image: linear-gradient( rgba(0,0,0,.75), rgba(0,0,0,.75) ), url(https://www.lindsaysilberman.com/wp-content/uploads/2019/10/makeup_expiration_dates.jpg);
+          }
+    
+      main { width: 100vw;
+             height: 100vh;
+             color: white;
+             background-image: linear-gradient( rgba(0,0,0,.75), rgba(0,0,0,.75) ),}
+    
+      nav{display: none;
+          }
+     
+      .move-form{
+            display: column;
+            align-items: center;
+            }
+            
+      .makeup-text { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+                        }
+    
+      .product-image{display: flex;
+                    background-color: white;
+                    justify-content: center;
+                    width: 65vw;
+                    flex-direction: column;
+                  }
+                        
+      .pr-photo{  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  height: 300px;
+                  margin: 0;
+                  object-fit: contain;
+                        }
+                        
+      .product-a {
+                  color: black;
+                  display: flex;
+                  justify-content: center;
+                  align-content: flex-start;
+                  margin: 0 10%;
+                        }
+                        
+      .description{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 100%;
+                    overflow-y: scroll;
+                        }
+    
+      #small-logo{
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin: 60px auto 10px;
+          }
+          
+      #big-logo{
+        font-family: 'Prata', serif;
+        text-align: center;
+        font-size: 60px;
+          }
+    
+    #look-form{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+          
+    #brand {
+      padding: 3px;
+      border: none;
+      font-family: 'Prata', serif;
+      margin: 3px 0;
+      text-align: center;
+    }
+    
+    #makeup-type {
+      padding: 3px;
+      border: none;
+      font-family: 'Prata', serif;
+      margin: 3px 0;
+      text-align: center;
+    }
+    
+    #look-btn{
+      color:black;
+      background-color: coral;
+      padding: 10px 30px;
+      margin: 3px;
+      border-radius: 6px;
+      border: none;
+      font-family: 'Prata', serif;
+      font-weight:bolder;
+     }
+    
+    #product {
+      background-color: #efefefa4;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 95vw;
+      padding: 0;
+      margin: 15px 0;}
+    
+    
+      #intro{
+          margin: 10px 0;
+          width: 90vw;
+          font-size: 20px;
+          display: flex;  
+          justify-content: center;
+          text-align: center;
+          }
+  }
+
+
+
+
+
+
+
 /****** MEDIA QUERY FOR MOBILE *******/ 
 @media only screen and (max-width: 600px) {
   body {
         margin:0;
         padding:0;
+        background-image: linear-gradient( rgba(0,0,0,.75), rgba(0,0,0,.75) ), url(https://i.pinimg.com/originals/b8/da/99/b8da9983701a71085579dacf82755e66.png);
       }
+
+  main { width: 100vw;
+         height: 100vh;
+         color: white;
+         background-image: linear-gradient( rgba(0,0,0,.75), rgba(0,0,0,.75) ),}
 
   nav{display: none;
       }
@@ -185,26 +351,28 @@ align-items: center;
         }
         
   .makeup-text { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                align-content: center;
                     }
 
   .product-image{display: flex;
+                background-color: white;
+                justify-content: center;
+                width: 65vw;
                 flex-direction: column;
-                background-color:white;
-                justify-content: space-around;
-                width: 100%;
-                    }
+              }
                     
-  .pr-photo{display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin:0;
-            object-fit: fill;
+  .pr-photo{  display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 300px;
+              margin: 0;
+              object-fit: contain;
                     }
                     
   .product-a {
@@ -244,7 +412,6 @@ align-items: center;
       
 #brand {
   padding: 3px;
-  border-radius: 6px;
   border: none;
   font-family: 'Prata', serif;
   margin: 3px 0;
@@ -253,7 +420,6 @@ align-items: center;
 
 #makeup-type {
   padding: 3px;
-  border-radius: 6px;
   border: none;
   font-family: 'Prata', serif;
   margin: 3px 0;
@@ -263,8 +429,8 @@ align-items: center;
 #look-btn{
   color:black;
   background-color: coral;
-  padding: 5px 5vw;
-  margin: 3px 0;
+  padding: 5px 15vw;
+  margin: 3px;
   border-radius: 6px;
   border: none;
   font-family: 'Prata', serif;
@@ -278,7 +444,8 @@ align-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   width: 95vw;
-}
+  padding: 0;
+  margin: 15px 0;}
 
 
   #intro{
