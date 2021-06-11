@@ -108,10 +108,9 @@ align-items: center;
 }
 
 #small-logo{
-  width: 30vw;
-  display: inline-flex;
+  display: flex;
   color: white;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 #big-logo{

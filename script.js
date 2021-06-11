@@ -19,27 +19,11 @@ const fetchData = async (brand, type) => {
   try {
     const response = await axios.get(url);
     const makeupSearch = response.data;
-    console.log(makeupSearch);
     makeupCard(makeupSearch);
   } catch (error) {
     console.log(error.message);
   }
 }
-
-
-
-// async function compareByBrand() {
-//   const url = `http://makeup-api.herokuapp.com/api/v1/products.json?`
-//   try {
-//     const response = await axios.get(url);
-//     const makeupOptions = response.data;
-//     optionCards(makeupOptions);
-//     console.log(makeupOptions);
-//   } catch (error) {
-//     console.log(error.message);
-//   }
-// }
-
 
 
 // function optionCards(data) {
@@ -71,7 +55,6 @@ function makeupCard(data) {
   let productInfo = document.querySelector('.product-a');
   let form = document.querySelector("#look-form");
   form.setAttribute("class", "move-form");
-  console.log(data);
   let photoContainer = document.createElement('div');
   let container = document.createElement('div');
 
@@ -85,7 +68,6 @@ function makeupCard(data) {
 
   let name = document.createElement('h2');
   name.innerText = data[0].name;
-  console.log(name);
 
   let brandName = document.createElement('h3');
   brandName.innerText = data[0].brand;
@@ -136,7 +118,18 @@ function logoMove() {
   mainSide.appendChild(logo);
 }
 
-
+async function compareByBrand() {
+  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?`
+  try {
+    const response = await axios.get(url);
+    let i = [];
+    const makeupOptions = response.data[i].brand;
+    console.log(makeupOptions);
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+compareByBrand();
 
 const showCard = document.querySelector('#look-form');
 showCard.addEventListener('submit', lookMakeup);
