@@ -76,8 +76,12 @@ function makeupCard(data) {
   let container = document.createElement('div');
 
   let photo = document.createElement('img')
-  photo.setAttribute('src', data[0].image_link);
+  photo.src = data[0].image_link;
   photo.setAttribute("class", "pr-photo");
+  const photoDefault = () => {
+    photo.src = "https://c.stocksy.com/a/AMd200/z9/627946.jpg";
+  }
+  photo.onerror = photoDefault; 
 
   let name = document.createElement('h2');
   name.innerText = data[0].name;
@@ -106,8 +110,6 @@ function makeupCard(data) {
   container.append(name, brandName, price, tags, description,);
   productInfo.appendChild(container)
 }
-
-
 
 function lookMakeup(event) {
   event.preventDefault();
