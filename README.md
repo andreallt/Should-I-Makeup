@@ -52,12 +52,12 @@ https://makeup-api.herokuapp.com/
 ## Project Schedule
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Jan 26| Project Approval | Incomplete
-|Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28| Initial Clickable Model  | Incomplete
-|Jan 29| MVP | Incomplete
-|Feb 1| Presentations/Project Submission | Incomplete
+|Jun 7| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Jun 7| Project Approval | Complete
+|Jun 8 | Core Application Structure (HTML, CSS, etc.) | Complete
+|Jun 9 - 10| Initial Clickable Model  | Complete
+|Jun 11| MVP | Complete
+|Jun 14| Presentations/Project Submission | Complete
 
 ## Priority Matrix
 [Priority Matrix](https://user-images.githubusercontent.com/85313403/121119340-6e7e2400-c7e9-11eb-92ba-99bf293c39ee.png)
@@ -66,19 +66,40 @@ https://makeup-api.herokuapp.com/
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Initial HTML setup | H | 3hrs| 1hr |  |
-| Axios set up | H | 3hrs| 4hrs |  |
-| Render results | H | 3hrs| 12hrs |  |
-| Other JS | H | 3hrs| 6hrs |  |
-| CSS for basic layout | M | 3hrs| 2hrs |  |
-| CSS for results | M | 4hrs| 7hrs |  |
-| Image placement | M | 3hrs| 2hrs |  |
-| Media query | H | 3hrs| 3hrs |  |
-| General Research | H | 3hrs| 4hrs |  |
-| Debugging | H | 4hrs| 3hrs |  |
-| Total | H | 45hrs| 38hrs |  |
+| Initial HTML setup | H | 3hrs| 1hr | 30min  |
+| Axios set up | H | 3hrs| 4hrs | 3hrs |
+| Render results | H | 3hrs| 12hrs | 3hr |
+| Other JS | H | 3hrs| 6hrs | 3hrs |
+| CSS for basic layout | M | 3hrs| 2hrs | 1hr|
+| CSS for results | M | 4hrs| 7hrs | 3hrs |
+| Image placement | M | 3hrs| 2hrs | 2.30hrs |
+| Media query | H | 3hrs| 3hrs | 3hrs |
+| General Research | H | 3hrs| 4hrs | 4hrs |
+| Debugging | H | 3hrs| 3hrs | 3hrs |
+| Total | H | 45hrs| 38hrs | 27hrs |
 
-## Code Snippet
+## Code Snippet  
+
+   " const fetchData = async (brand, type) => {
+      let removeInfo = document.querySelector('.product-a');
+      removeInfo.childNodes.forEach((childNode) => {
+        childNode.remove();
+      });
+      let removePhoto = document.querySelector('.product-image');
+      removePhoto.childNodes.forEach((childNode) => {
+        childNode.remove();
+      });
+      const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}&product_type=${type}`
+      try {
+        const response = await axios.get(url);
+        const makeupSearch = response.data;
+        makeupCard(makeupSearch);
+      } catch (error) {
+        console.log(error.message);
+      }
+    } "
+
 
 ## Change Log
-Initialize My Flamingos Project 1  - "Should I Makeup?" - Timeframes will change as projects develops. 
+Initialize My Flamingos Project 1  - "Should I Makeup?" - Timeframes will changed 
+Able to finished MVPs and I updated wireframes
