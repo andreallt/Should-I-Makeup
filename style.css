@@ -250,7 +250,7 @@ align-items: center;
       border: none;
       font-family: 'Prata', serif;
       margin: 3px 0;
-      text-align: center;
+      text-align: left;
     }
     
     #makeup-type {
@@ -258,7 +258,7 @@ align-items: center;
       border: none;
       font-family: 'Prata', serif;
       margin: 3px 0;
-      text-align: center;
+      text-align: left;
     }
     
     #look-btn{
@@ -385,7 +385,7 @@ align-items: center;
   border: none;
   font-family: 'Prata', serif;
   margin: 3px 0;
-  text-align: center;
+  text-align: left;
 }
 
 #makeup-type {
@@ -393,7 +393,7 @@ align-items: center;
   border: none;
   font-family: 'Prata', serif;
   margin: 3px 0;
-  text-align: center;
+  text-align: left;
 }
 
 #look-btn{
