@@ -100,7 +100,6 @@ function lookMakeup(event) {
   let brand = brandInput.value;
   let typeMakeup = typeInput.value;
   fetchData(brand, typeMakeup);
-  // compareByBrand();
 }
 
 

@@ -56,7 +56,7 @@ https://makeup-api.herokuapp.com/
 |Jun 7| Project Approval | Complete
 |Jun 8 | Core Application Structure (HTML, CSS, etc.) | Complete
 |Jun 9 - 10| Initial Clickable Model  | Complete
-|Jun 11| MVP | Complete
+|Jun 11| MVP | Completed
 |Jun 14| Presentations/Project Submission | Complete
 
 ## Priority Matrix
